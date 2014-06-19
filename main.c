@@ -1,30 +1,7 @@
-// http://www.functionx.com/win32/index.htm
-// https://github.com/Totktonada/keylogger
-// http://msdn.microsoft.com/en-us/library/windows/desktop/ff657751%28v=vs.85%29.aspx
-// SharpKey.exe
-
 /*
  * Small program that helps to use both hands for pressing
- * keyboard combinations. It works under assumption that
- * user always presses a certain keys with the same hand.
- *
- * User can configure left-hand and right-hand zones. If some
- * keys can be pressed by both hands (e.g. "space bar") then they
- * should not be added to the config files. To configure program
- * you have to specify scan codes of the keys. Scan codes allow for
- * program to work with different layouts .
- *
- * The program adds hook to the OS, listens for low-level keyboard events
- * and produces sound when exactly two keys are pressed and both
- * belong to the same hand.
- *
- * This is not a keyboard logger but can be easily transformed to some
- * kind of it. The most secure way to run this program is to
- * compile it from sources.
+ * keyboard combinations.
  */
-
-
-
 #include <stdio.h>
 #include <time.h>
 
